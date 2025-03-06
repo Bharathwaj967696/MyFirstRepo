@@ -48,6 +48,18 @@ public class Application {
         if (validChoice) {
             System.out.println("Result: " + result);
         }
+        #feature202 changes by Bhavani on October 2024 on Payment Gateway Module
+        public static int countVowels(String str) {
+    int count = 0;
+    str = str.toLowerCase();
+    for (char ch : str.toCharArray()) {
+        if ("aeiou".indexOf(ch) != -1) {
+            count++;
+        }
+    }
+    return count;
+}
+#end of feature202
         
         System.out.println("Thank you for using the Simple Calculator Application!");
         scanner.close();
