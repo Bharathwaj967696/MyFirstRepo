@@ -44,7 +44,20 @@ public class Application {
                 System.out.println("Invalid choice! Please select a valid operation.");
                 validChoice = false;
         }
-        
+        #feature201 changes by Bharathwaj on October 2024 on Reports Module
+        public static boolean isPrime(int num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (int i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+#end of feature201
+
         if (validChoice) {
             System.out.println("Result: " + result);
         }
